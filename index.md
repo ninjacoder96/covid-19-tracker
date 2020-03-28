@@ -30,11 +30,11 @@
           <img class="card-img-top" src="download.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Philippines</h5>
-            <p class="card-text">Total Cases: <span id="numberCount"></span></p>
-            <p class="card-text">Today Case: <span id="todayCaseCount"></span></p>
-            <p class="card-text">Deaths: <span id="deathsCount"></span></p>
-            <p class="card-text">Recovered: <span id="recoveredCount"></span></p>
-            <p class="card-text">Critical: <span id="criticalCount"></span></p>
+            <p class="card-text text-secondary">Total Cases: <span id="numberCount"></span></p>
+            <p class="card-text text-primary">Today Case: <span id="todayCaseCount"></span></p>
+            <p class="card-text text-danger">Deaths: <span id="deathsCount"></span></p>
+            <p class="card-text text-success">Recovered: <span id="recoveredCount"></span></p>
+            <p class="card-text text-warning">Critical: <span id="criticalCount"></span></p>
             <p class="card-text">Date Today : <span id="dateToday"></span></p>
           </div>
         </div>
