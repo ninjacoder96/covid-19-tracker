@@ -37,7 +37,7 @@
             <p class="card-text text-success">Recovered: <span id="recoveredCount"></span></p>
             <p class="card-text text-warning">Critical: <span id="criticalCount"></span></p>
             <p class="card-text">Date Today : <span id="dateToday"></span></p>
-            <span class="text-muted">Note - Data Refreshes every 24 hour</span>
+            <span class="text-muted">Note - Data Refreshes every 1 Hour</span>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
           
           setTimeout(function(){
             getPhilippineCovidCase();
-          },86400000);
+          },3600000);
         }); 
       }
 
