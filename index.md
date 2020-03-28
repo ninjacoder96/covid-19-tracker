@@ -29,7 +29,7 @@
         <div class="card">
           <img class="card-img-top" src="download.png" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Philippines</h5>
+            <h3 class="card-title">Philippines</h3>
             <p class="card-text text-secondary">Total Cases: <span id="numberCount"></span></p>
             <p class="card-text text-primary">Today Case: <span id="todayCaseCount"></span></p>
             <p class="card-text text-danger">Deaths: <span id="deathsCount"></span></p>
