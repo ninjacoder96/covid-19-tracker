@@ -36,6 +36,7 @@
             <p class="card-text text-success">Recovered: <span id="recoveredCount"></span></p>
             <p class="card-text text-warning">Critical: <span id="criticalCount"></span></p>
             <p class="card-text">Date Today : <span id="dateToday"></span></p>
+            <span class="text-muted">Note - Data Refreshes every 24 hour</span>
           </div>
         </div>
       </div>
@@ -55,14 +56,24 @@
   </script>
   <script>
     $(document).ready(function(){
-      $.get( "https://coronavirus-19-api.herokuapp.com/countries/Philippines", function( data ) {
-        $( "#numberCount" ).html( data.cases); 
-        $("#todayCaseCount").html(data.todayCases);
-        $("#deathsCount").html(data.deaths)
-        $("#recoveredCount").html(data.recovered)
-        $("#criticalCount").html(data.critical);
-      }); 
+     
 
+
+      function getPhilippineCovidCase(){
+          $.get( "https://coronavirus-19-api.herokuapp.com/countries/Philippines", function( data ) {
+          $( "#numberCount" ).html( data.cases); 
+          $("#todayCaseCount").html(data.todayCases);
+          $("#deathsCount").html(data.deaths)
+          $("#recoveredCount").html(data.recovered)
+          $("#criticalCount").html(data.critical);
+          
+          setTimeout(function(){
+            getPhilippineCovidCase();
+          },86400000);
+        }); 
+      }
+
+      getPhilippineCovidCase();
       var today = new Date();
       var dd = String(today.getDate()).padStart(2, '0');
       var mm = String(today.getMonth() + 1).padStart(2, '0'); 
