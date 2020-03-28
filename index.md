@@ -25,10 +25,10 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-12 col-sm-4 col-lg-12">
          <h3 class="text-center">Covid-19 Philippine Simple Tracker - Stay Home and always wash your hands - Joshua</h3>
         <div class="card">
-          <img class="card-img-top" src="download.png" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="download.jpg" alt="Card image cap">
           <div class="card-body">
             <h3 class="card-title">Philippines</h3>
             <p class="card-text text-secondary">Total Cases: <span id="numberCount"></span></p>
