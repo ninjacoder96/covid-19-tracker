@@ -26,6 +26,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
+         <h3 class="text-center">Covid-19 Philippine Simple Tracker - Stay Home and always wash your hands - Joshua</h3>
         <div class="card">
           <img class="card-img-top" src="download.png" alt="Card image cap">
           <div class="card-body">
