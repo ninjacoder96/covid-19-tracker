@@ -222,10 +222,11 @@
     /* Smartphones (portrait) ----------- */
     @media screen and (max-width : 700px) {
         #otherStatsContainer{
-            color:grey;
+            display: block;
         }
         .otherStats{
-            
+            display:flex !important;
+            margin:10px auto;
         }
     }
 </style>
