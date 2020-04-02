@@ -225,8 +225,7 @@
             color:grey;
         }
         .otherStats{
-            display:none;
-            background:green;
+            
         }
     }
 </style>
