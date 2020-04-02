@@ -228,6 +228,9 @@
             display:flex !important;
             margin:10px auto;
         }
+        #designBy{
+            text-align:center;
+        }
     }
 </style>
 
