@@ -17,6 +17,10 @@
         src: url('fonts/Lato/Lato-Bold.ttf');
     }
 
+    @font-face{
+        font-family:Barlow;
+        src: url('fonts/Barlow/Barlow-Regular.ttf');
+    }
     html,
     body {
         height: 100%;
@@ -191,12 +195,12 @@
         color: #FFFFFF;
         opacity: 1;
     }
-    
-    #designBy a{
-        color:white;
+
+    #designBy a {
+        color: white;
     }
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 600px) and (orientation : portrait) {
         .philBrand {
             position: relative;
             left: 0;
@@ -210,10 +214,20 @@
             background-size: auto;
         }
 
-        #dataReminder{
-            margin:0 auto;
+        #dataReminder {
+            margin: 0 auto;
         }
+    }
 
+    /* Smartphones (portrait) ----------- */
+    @media screen and (max-width : 700px) {
+        #otherStatsContainer{
+            color:grey;
+        }
+        .otherStats{
+            display:none;
+            background:green;
+        }
     }
 </style>
 
@@ -236,11 +250,6 @@
                             <span id="caseTodayCounter"></span>
                             <span id="todayCaseLabel">Cases Today</span>
                         </div>
-                        <!-- <div id="caseTodayContainer">
-                            <p id="caseTodayCounter"></p>
-                            <span id="todayCaseLabel">Cases Today</span>
-                        </div> -->
-
                         <div id="otherStatsContainer">
                             <div class="otherStats">
                                 <span id="recoveredCounter"></span>
@@ -255,8 +264,6 @@
                                 <span class="otherStatsLabel">Death(s)</span>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -267,7 +274,8 @@
     <footer id="sticky-footer" class="navbar footer mt-auto py-3">
         <div class="container">
             <span id="dataReminder">Data refreshes every hour*</span>
-            <span id="designBy">Covid-19 Tracker by <a href="https://github.com/ninjacoder96">ninjacoder96</a> | Designed By Chris</span>
+            <span id="designBy">Covid-19 Tracker by <a href="https://github.com/ninjacoder96">ninjacoder96</a> |
+                Designed By Chris</span>
         </div>
     </footer>
     <!-- Optional JavaScript -->
